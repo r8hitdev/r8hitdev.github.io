@@ -89,7 +89,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-14 md:py-20">
       <SectionHeading title="Skills" intro="Explore my skills as a full-stack developer." />
-      <Reveal className="noise-overlay relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-5 md:p-8">
+      <Reveal className="noise-overlay relative rounded-2xl border border-white/10 bg-white/[0.02] p-5 md:p-8">
         <h3 className="text-xl font-bold tracking-tight text-white/95 md:text-2xl">
           Beyond the Code
         </h3>

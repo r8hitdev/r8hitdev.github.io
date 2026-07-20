@@ -26,12 +26,16 @@ export const metadata: Metadata = {
   authors: [{ name: SITE.name, url: SITE_URL }],
   creator: SITE.name,
   alternates: { canonical: '/' },
-  // Favicon lives in public/favicon.ico; asset() applies the /freelance base
-  // path in production so the link resolves under the project page.
+  // Favicons live in public/ (a downscaled circular avatar). asset() keeps the
+  // links base-path aware for a possible future project-page move.
   icons: {
-    icon: asset('/favicon.ico'),
+    icon: [
+      { url: asset('/favicon.ico'), sizes: 'any' },
+      { url: asset('/icon-32.png'), type: 'image/png', sizes: '32x32' },
+      { url: asset('/icon-64.png'), type: 'image/png', sizes: '64x64' },
+    ],
     shortcut: asset('/favicon.ico'),
-    apple: asset('/favicon.ico'),
+    apple: asset('/icon-64.png'),
   },
   keywords: [
     'Rohit Patil',

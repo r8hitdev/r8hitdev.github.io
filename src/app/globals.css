@@ -91,6 +91,7 @@ section[id] {
   content: '';
   position: absolute;
   inset: 0;
+  border-radius: inherit;
   pointer-events: none;
   opacity: 0.12;
   mix-blend-mode: soft-light;
